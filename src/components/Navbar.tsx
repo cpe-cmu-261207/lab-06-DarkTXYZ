@@ -1,4 +1,4 @@
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 	return (
@@ -9,7 +9,7 @@ const Navbar = () => {
 				<p>|</p>
 				<Link to='/history/select'><p>Historical price</p>	</Link>
 				<p>|</p>
-				<Link to='/about'><p>About me</p></Link>	
+				<Link to='/about'><p>About me</p></Link>
 			</div>
 		</div>
 	)

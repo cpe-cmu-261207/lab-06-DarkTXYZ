@@ -64,7 +64,7 @@ const Current = () => {
                     <p className='text-2xl'>Loading ...</p>
                 </div>
             )
-            
+
         }
         else {
             return (
