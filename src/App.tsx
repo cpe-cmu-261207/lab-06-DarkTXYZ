@@ -10,6 +10,9 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
+      <Route exact path='/'>
+          <Current />
+        </Route>
         <Route path='/current'>
           <Current />
         </Route>

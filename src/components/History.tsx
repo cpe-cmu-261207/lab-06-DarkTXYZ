@@ -9,8 +9,18 @@ const History = () => {
     const hist = useHistory()
 
     const check = () => {
+
+        var a = null, b = null;
+        if(startDate != null)
+            a = new Date(startDate)
+        if(endDate != null)
+            b = new Date(endDate)
+
         if (startDate == null || endDate == null)
             alert('Please select start date and end date correctly')
+        else if(a != null && b != null && a?.getTime() > b?.getTime()){
+            alert('Please select start date and end date correctly')
+        }
         else
             hist.push(`./result?start=${startDate}&end=${endDate}`)
     }

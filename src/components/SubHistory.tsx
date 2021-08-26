@@ -39,7 +39,6 @@ const SubHistory = () => {
             ls.push(key + ' - ' + value)
         }
         const final = ls.map(x => <li>{x}</li>)
-        console.log(final)
         return final
     }
 
@@ -74,7 +73,6 @@ const SubHistory = () => {
             )
         }
     }
-
     return (
         <div>
             {render()}
